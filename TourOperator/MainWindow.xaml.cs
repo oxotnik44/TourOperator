@@ -85,7 +85,8 @@ namespace TourOperator
 
                     // Обновление информации на форме
                     UpdateInfo();
-                    MessageBox.Show("Тур успешно удален из базы данных.");
+                    MessageBox.Show("Тур успешно удален из базы данных", "Удаление", MessageBoxButton.OK, MessageBoxImage.Information);
+
                 }
                 else
                 {

@@ -29,7 +29,7 @@
         <Label Grid.Row="1" Grid.Column="0" Content="Статус:" VerticalAlignment="Center" Height="26"/>
         <ComboBox x:Name="txtStatus" Grid.Row="1" Grid.Column="1" Margin="10" IsEditable="False">
             <ComboBoxItem>Отменен</ComboBoxItem>
-            <ComboBoxItem>Подтвержден</ComboBoxItem>
+            <ComboBoxItem>Забронирован</ComboBoxItem>
             <ComboBoxItem>Завершен</ComboBoxItem>
             <ComboBoxItem>В процессе проведения</ComboBoxItem>
         </ComboBox>

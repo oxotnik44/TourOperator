@@ -71,6 +71,8 @@ namespace TourOperator.Window
 
             dbContext.SaveChanges(); // Сохранение изменений в БД
             _updateInfo();
+            MessageBox.Show("Данные успешно сохранены", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
+
             // Закрытие окна
             Close();
         }

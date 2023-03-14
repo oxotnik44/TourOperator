@@ -60,6 +60,7 @@ namespace TourOperator.Model.Window
             db.SaveChanges();
 
             _updateInfo();
+            MessageBox.Show("Данные успешно сохранены", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
             Close();
         }
     }
