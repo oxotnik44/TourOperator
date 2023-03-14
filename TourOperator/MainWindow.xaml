@@ -1,0 +1,49 @@
+﻿<Window x:Class="TourOperator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TourOperator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1014">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="761*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="157*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="BtnAddTour" Content="Добавить тур" Width="140" Height="36" Background="#FF1C75BC" Click="BtnAddTour_Click"  />
+            <Label Content=" "/>
+            <Button x:Name="BtnEditTour" Content="Изменить данные о туре" Width="200" Height="36" Background="#FF1C75BC" Click="BtnEditTour_Click" />
+            <Label Content=" "/>
+            <Button x:Name="BtnDeleteTour" Content="Удалить данные о туре" Width="200" Height="36" Background="#FF1C75BC" Click="BtnDeleteTour_Click" />
+            <Label Content="" Height="26"/>
+            <Label Content="" Height="26"/>
+            <Label Content="" Height="26"/>
+            <Label Content="" Height="26"/>
+            <Label Content="" Height="26"/>
+        </StackPanel>
+        <DataGrid x:Name="dataGridView1" Grid.Row="2" Margin="2,5,10,10" 
+          ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto"
+          AutoGenerateColumns="False" Grid.Column="1" SelectionChanged="dataGridView1_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding TourID}" />
+                <DataGridTextColumn Header="Место назначения" Binding="{Binding Destination}" />
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" />
+                <DataGridTextColumn Header="Дата начала" Binding="{Binding StartDate}" />
+                <DataGridTextColumn Header="Дата окончания" Binding="{Binding EndDate}" />
+                <DataGridTextColumn Header="Культурная программа" Binding="{Binding CulturalProgram}" />
+                <DataGridTextColumn Header="Бизнес программа" Binding="{Binding BusinessProgram}" />
+                <DataGridTextColumn Header="ID гида" Binding="{Binding GuideID}" />
+                <DataGridTextColumn Header="ID бухгалтера" Binding="{Binding AccountantID}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

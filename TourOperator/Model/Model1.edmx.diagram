@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c26e0910eb64112b2ab23652bc84677" Name="Diagram1">
+        <EntityTypeShape EntityType="TourOperatorModel.Accountant" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.Clients" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.CustomerReviews" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.Guides" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.Reports" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.StateStatisticsReports" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.TaxPayments" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.Tours" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourOperatorModel.TravelVouchers" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <AssociationConnector Association="TourOperatorModel.FK_Accountant_StateStatisticsReports" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Accountant_TaxPayments" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Tours_Accountant" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Clients_CustomerReviews" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Clients_Tours" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Clients_TravelVouchers" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Guides_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TourOperatorModel.FK_Tours_Guides" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
